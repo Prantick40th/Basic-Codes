@@ -1,0 +1,36 @@
+/*To swap the values of two integer variables with
+and without using any extra variables*/
+
+#include<stdio.h>
+int main()
+{
+    int calculate,extra,a,b;
+
+    printf("Enter the first variable: \n");
+    scanf("%d",&a);
+    printf("Enter the second variable: \n");
+    scanf("%d",&b);
+    printf("\n\n");
+    printf("Enter 1 : For swapping with variables\n");
+    printf("Enter 2 : For swapping without variables\n");
+
+    scanf("%d",&calculate);
+
+    if(calculate == 1)
+    {
+        extra = a ;
+        a = b ;
+        b = extra ;
+    }
+    else if(calculate == 2)
+    {
+        a = a+b;
+        b = a-b;
+        a = a-b;
+    }
+    printf("\nAfter Swapping a = %d , b = %d\n",a,b);
+
+
+    return 0;
+}
+
