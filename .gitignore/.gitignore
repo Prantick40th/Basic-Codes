@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+int main()
+{
+    printf("Hellow World,this is prantick with c pragramming.");
+    return 0;
+}
