@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+int lc, check, num=909, guess;
+for(lc=1, check=1; lc<=5 && check==1; lc++) // check as flag
+{
+printf("\nGuess the number:");
+scanf("%d", &guess);
+if(num==guess)
+check=0;
+}
+/*using do loop*/
+/*
+lc=1, check=1;
+do
+{
+printf("\nGuess the number:");
+scanf("%d", &guess);
+if(num==guess)
+check=0;
+lc++;
+}while(lc<=5 && check);
+*/
+if(!check)
+printf("\nCongrats! You have guessed in %d tries!\n", --lc);
+else
+printf("\nSorry!You failed in all 5 tries.\n");
+return 0;
+}
