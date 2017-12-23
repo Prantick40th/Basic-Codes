@@ -1,0 +1,158 @@
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+int main()
+{
+    int i,d;
+    int sepa[4]={44,58,63,46};
+    int opa[9]={43,45,42,47,62,60,61,38,124};
+    int pare[6]={40,41,123,125,91,93};
+
+    scanf("%c",&i);
+
+        if(i == sepa[0])
+        {
+            printf("This is a Separator\n");
+            printf("The ascii code of %c is %d\n",i,i);
+            printf("Coma\n");
+        }
+        else if(i == sepa[1])
+        {
+            printf("This is a Separator\n");
+            printf("The ascii code of %c is %d\n",i,i);
+            printf("Colon\n");
+        }
+        else if(i == sepa[2])
+        {
+            printf("This is a Separator\n");
+            printf("The ascii code of %c is %d\n",i,i);
+            printf("Question\n");
+        }
+        else if(i == sepa[3])
+        {
+            printf("This is a Separator\n");
+            printf("The ascii code of %c is %d\n",i,i);
+            printf("Dot\n");
+        }
+
+
+        else if(i == opa[0])
+        {
+            printf("This is an Operator\n");
+            printf("The ascii code of %c is %d\n",i,i);
+            printf("Arithmetic");
+        }
+        else if(i == opa[1])
+        {
+        printf("This is an Operator\n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Arithmetic");
+        }
+        else if(i == opa[2])
+        {
+        printf("This is an Operator\n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Arithmetic\n");
+        }
+        else if(i == opa[3])
+        {
+        printf("This is an Operator\n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Arithmetic\n");
+        }
+        else if(i == opa[4])
+        {
+        printf("This is an Operator\n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Logical\n");
+        }
+        else if(i == opa[5])
+        {
+        printf("This is an Operator/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Logical\n");
+        }
+        else if(i == opa[6])
+        {
+        printf("This is an Operator/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Logical\n");
+        }
+        else if(i == opa[7])
+        {
+        printf("This is an Operator/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Relational\n");
+        }
+        else if(i == opa[8])
+        {
+        printf("This is an Operator/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("Relational\n");
+        }
+        else if(i == pare[0])
+        {
+        printf("This is a Parenthesis/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("opening first bracket\n");
+        }
+        else if(i == pare[1])
+        {
+        printf("This is a Parenthesis/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("ending first bracket\n");
+        }
+        else if(i == pare[2])
+        {
+        printf("This is an Parenthesis/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("opening second bracket\n");
+        }
+        else if(i == pare[3])
+        {
+        printf("This is an Parenthesis/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("ending second bracket\n");
+        }
+        else if(i == pare[4])
+        {
+        printf("This is an Parenthesis/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("opening third bracket\n");
+        }
+        else if(i == pare[5])
+        {
+        printf("This is an parenthesis/n");
+        printf("The ascii code of %c is %d\n",i,i);
+        printf("ending third bracket\n");
+        }
+
+
+        if(isdigit(i))
+        {
+            if(i%2 == 0){
+                printf("this is a digit\n");
+                printf("The asci code of %c is %d\n",i,i);
+                printf("Even number\n");
+            }
+            else
+            {
+                printf("this is a digit\n");
+                printf("The asci code of %c is %d\n",i,i);
+                printf("odd number\n");
+            }
+            }
+
+            if(isupper(i)){
+                printf("This is an Allphabet/");
+                printf("The Ascii of %c is %d",i,i);
+                printf("Upper Case");}
+            else if(islower(i)){
+                printf("This is an Allphabet/");
+                printf("The Ascii of %c is %d",i,i);
+                printf("Lower Case");
+            }
+
+    return 0;
+
+}
