@@ -1,0 +1,59 @@
+#include<stdio.h>
+int main()
+{
+    int a , b , c , n , i;
+    printf("Declare n'th terms of the series: ");
+    scanf("%d",&n);
+
+    for(a=0,b=1,i=1 ; i<=n ; i++){
+        c = a+b;
+        a = b;
+        b = c;
+        printf("% d",a);
+    }
+
+
+    return 0;
+}
+
+
+with test case
+#include<stdio.h>
+int main()
+{
+    int i , j , n , a , b , c  , T ;
+
+    //a=0;    //show value from last
+    //b=1;
+
+
+    printf("Enter your Test case number ");
+    scanf("%d",&T);
+    while ( T-- )
+    {
+        scanf("%d",&n);
+        a=0;     //show value from first8
+        b=1;
+
+         for(i=1 ; i<=n ; i++)
+    {
+        //if ( i == n ) //ignore this will show full fabi case
+        printf("%d",a);
+        c = a+b;
+        a = b;
+        b = c;
+
+    }
+
+    printf("\n\n");
+
+
+    }
+
+
+
+
+
+
+    return 0;
+}
