@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int arry[100],n,i,location,check,key,tarm=1 ;
+
+    while(scanf("%d",&n) != EOF)
+    {
+         for(i=0 ; i<n ; i++)
+        scanf("%d",&arry[i]);
+        scanf("%d",&key);
+
+
+    for(i=0 ; i<n ; i++)
+    {
+        if(arry[i]==key)
+            break;
+    }
+
+        printf("case %d :",tarm);
+        tarm++;
+
+        if (i == n )
+            printf("No");
+        else
+            printf("%d",i+1);
+    }
+
+
+
+
+    return 0;
+
+}
